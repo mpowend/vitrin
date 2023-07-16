@@ -11,7 +11,9 @@ const Nav = ({ items }: { items: string[] }) => {
         </div>
         <div className="flex items-center justify-between mr-4">
           {items.map(item => (
-            <button className="h-full mr-2 w-fit">{item}</button>
+            <button key={item} className="h-full mr-2 w-fit">
+              {item}
+            </button>
           ))}
         </div>
       </div>
