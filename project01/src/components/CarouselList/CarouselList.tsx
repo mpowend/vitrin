@@ -1,9 +1,16 @@
 import { useEffect } from 'react'
 import useCarousel from './hooks/useCarousel'
-import List from './components/List/List'
-import ListItem from './components/ListItem/ListItem'
+import List from './components/List'
+import ListItem from './components/ListItem'
+import CarouselCore from 'components/CarouselCore'
 
-const Carousol = ({ images, texts }: { images: string[]; texts: string[] }) => {
+const CarousolList = ({
+  images,
+  texts,
+}: {
+  images: string[]
+  texts: string[]
+}) => {
   const { activeIndex, dispatch } = useCarousel({ imageCount: images.length })
   let interval = 0
   const startTimer = () => {
@@ -20,44 +27,7 @@ const Carousol = ({ images, texts }: { images: string[]; texts: string[] }) => {
     <>
       <div className="flex flex-row justify-center">
         <div className="w-4/6 h-[400px] relative overflow-hidden rounded-lg">
-          <div
-            key={activeIndex.prev + 'bg'}
-            className={`absolute top-0 left-0 z-10 w-full h-full bg-black ${
-              activeIndex.prev != -1 ? 'opacity-100 animate-slide' : 'opacity-0'
-            }`}
-          >
-            <img
-              src={images[activeIndex.prev]}
-              className="object-cover w-full h-full blur-sm"
-              alt="carousel"
-            />
-          </div>
-          <div
-            key={activeIndex.prev + 'image'}
-            className={`absolute top-0 left-0 z-20 w-full h-full bg-black ${
-              activeIndex.prev != -1 ? 'opacity-100 animate-slide' : 'opacity-0'
-            }`}
-          >
-            <img
-              src={images[activeIndex.prev]}
-              className="relative object-contain w-full h-full"
-              alt="image"
-            />
-          </div>
-          <div className="absolute top-0 left-0 z-0 w-full h-full bg-black opacity-100">
-            <img
-              src={images[activeIndex.active]}
-              className="object-cover w-full h-full blur-sm"
-              alt="carousel"
-            />
-          </div>{' '}
-          <div className="absolute top-0 left-0 z-0 w-full h-full bg-black opacity-100">
-            <img
-              src={images[activeIndex.active]}
-              className="absolute top-0 z-0 object-contain w-full h-full"
-              alt="image"
-            />
-          </div>
+          <CarouselCore images={images} activeIndex={activeIndex} />
         </div>
         {/* <div className="absolute flex justify-center w-full mt-1">
         {images.map((_, index) => (
@@ -88,4 +58,4 @@ const Carousol = ({ images, texts }: { images: string[]; texts: string[] }) => {
   )
 }
 
-export default Carousol
+export default CarousolList
