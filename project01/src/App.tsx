@@ -1,5 +1,5 @@
 import 'App.css'
-import Carousol from 'components/Carousel'
+import CarousolList from 'components/CarouselList'
 import Nav from 'components/Nav'
 import CarouselImage1 from 'assets/carousel1.jpg'
 import CarouselImage2 from 'assets/carousel2.jpg'
@@ -8,7 +8,10 @@ function App() {
   return (
     <>
       <Nav items={['Home', 'Categories', 'Shop', 'About', 'Contact']} />
-      <Carousol images={[CarouselImage1, CarouselImage2, CarouselImage3]} />
+      <CarousolList
+        images={[CarouselImage1, CarouselImage2, CarouselImage3]}
+        texts={['star', 'kill', 'death']}
+      />
     </>
   )
 }
