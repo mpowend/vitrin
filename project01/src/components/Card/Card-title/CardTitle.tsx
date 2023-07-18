@@ -1,6 +1,6 @@
 import React from 'react'
 type props = {
-    align : 'right'|'center'|'left';
+    align? : 'right'|'center'|'left';
     children : React.ReactNode;
 }
 

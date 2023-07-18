@@ -12,12 +12,12 @@ function App() {
     <>
       <Nav items={['Home', 'Categories', 'Shop', 'About', 'Contact']} />
       <Carousol images={[CarouselImage1, CarouselImage2, CarouselImage3]} />
-     <section className='flex'>
-      <Card dir='col' pointer>
-        <CardMedia src={CarouselImage1} caption='price'></CardMedia>
-        <CardTitle>this is a title</CardTitle>
-      </Card>
-      </section> 
+      <section className="flex">
+        <Card dir="col" pointer>
+          <CardMedia src={CarouselImage1} caption="price"></CardMedia>
+          <CardTitle>this is a title</CardTitle>
+        </Card>
+      </section>
     </>
   )
 }
