@@ -7,9 +7,11 @@ import CarouselCore from 'components/CarouselCore'
 const CarousolList = ({
   images,
   texts,
+  className,
 }: {
   images: string[]
   texts: string[]
+  className?: string
 }) => {
   const { activeIndex, dispatch } = useCarousel({ imageCount: images.length })
   let interval = 0
@@ -25,7 +27,7 @@ const CarousolList = ({
 
   return (
     <>
-      <div className="flex flex-row justify-center">
+      <div className={`flex flex-row justify-center ${className}`}>
         <div className="w-4/6 h-[400px] relative overflow-hidden rounded-lg">
           <CarouselCore images={images} activeIndex={activeIndex} />
         </div>

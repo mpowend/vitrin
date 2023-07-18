@@ -2,7 +2,7 @@ import Logo from 'assets/logo.svg'
 
 const Nav = ({ items }: { items: string[] }) => {
   return (
-    <nav className="w-screen h-12 bg-gray-800">
+    <nav className="w-full h-12 bg-lighterBlack">
       <div className="flex items-center justify-between h-full">
         <div className="flex items-center">
           <div className="ml-4 text-xl font-bold text-white">
