@@ -7,8 +7,48 @@
     <script src="script.js" defer></script>
     <title>Vitrin</title>
   </head>
-  <body>
-    <header class="w-full">
+  <body class="iransans">
+    <header class="w-full h-[100px] flex flex-row justify-evenly">
+      <div class="rounded-full border-[1px] my-auto flex flex-row">
+        <button class="w-6 ml-3">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class=""
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+            ></path>
+          </svg>
+        </button>
+        <input
+          type="text"
+          class="flex flex-row items-center w-64 p-2 leading-6 rounded-r-full align-start rtl"
+          placeholder="جست و جو در ویترین"
+        />
+      </div>
+      <div class="flex flex-row items-center h-full gap-4 rtl max-sm:hidden">
+        <div class="flex flex-col h-full pb-2">
+          <img
+            class="flex-grow object-contain object-bottom w-full h-0 rounded-full"
+            src="https://vitrin.splus.ir/static/media/logo.703f80be4dc089978e16.png"
+          />
+          <span class="text-xs">سروش پلاس</span>
+        </div>
+        <a href="#">صفحه اصلی</a>
+        <a href="#">بلاگ</a>
+        <a href="#">دریافت برنامه</a>
+      </div>
+    </header>
+    <main class="w-full">
       <div
         class="w-full overflow-x-scroll whitespace-nowrap snap-mandatory snap-x scroll"
       >
@@ -28,6 +68,6 @@
           />
         </div>
       </div>
-    </header>
+    </main>
   </body>
 </html>

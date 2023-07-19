@@ -1,10 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: iransans;
+  src: url(./assets/ttf/IRANSans.ttf);
+}
 
 @layer components {
   .sliderItem {
     @apply inline-block w-11/12 snap-center 
     cursor-grab [&>img]:rounded-md [&>img]:relative;
+  }
+}
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+  .iransans {
+    font-family: iransans;
   }
 }
