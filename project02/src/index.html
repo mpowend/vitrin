@@ -8,7 +8,9 @@
     <title>Vitrin</title>
   </head>
   <body class="iransans">
-    <header class="w-full h-[100px] flex flex-row justify-evenly">
+    <header
+      class="w-full h-[60px] flex flex-row justify-around fixed p-1 bg-white z-10"
+    >
       <div class="rounded-full border-[1px] my-auto flex flex-row">
         <button class="w-6 ml-3">
           <svg
@@ -48,123 +50,182 @@
         <a href="#">دریافت برنامه</a>
       </div>
     </header>
-    <main>
-      <div
-        class="w-full overflow-x-scroll whitespace-nowrap snap-mandatory snap-x scroll"
+    <div class="w-full pt-1 pb-5 bg-light-gray">
+      <main
+        class="flex flex-col max-w-[800px] gap-8 mt-[60px] px-8 mx-auto bg-white rounded-md"
       >
-        <div class="sliderItem">
-          <img
-            src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403625-photo144177861012515465.jpg?temp_url_expires=4733510400&temp_url_sig=be1fdd764f612101fc3390b95605fd349b3651c5"
-          />
-        </div>
-        <div class="sliderItem">
-          <img
-            src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689658116-photo144150372971893303%20%284%29.jpg?temp_url_expires=4733510400&temp_url_sig=74c52b7d4e61fc34d7d042fc02d98fa6f58de6c7"
-          />
-        </div>
-        <div class="sliderItem">
-          <img
-            src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403473-photo144177861012525421.jpg?temp_url_expires=4733510400&temp_url_sig=3b6fefb2171003cb99aa5c7512ad3f4f12d06167"
-          />
-        </div>
-      </div>
-      <!-- card holder -->
-      <section
-        id="best"
-        class="flex flex-col items-center justify-center w-full max-w-2xl mx-auto"
-      >
-        <div class="flex flex-row-reverse w-full px-3 mx-auto">
-          <div class="inline-block w-2/4 text-right" id="title">برترین ها</div>
-          <div class="inline-block w-2/4" id="show-all-link">نمایش همه</div>
-        </div>
+        <!-- Slider -->
         <div
-          class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x"
-          id="list-container"
+          class="w-full overflow-x-scroll whitespace-nowrap snap-mandatory snap-x no-scrollbar"
         >
-          <!-- cart Component -->
-          <div
-            class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-center"
-          >
-            <div class="flex flex-col w-full h-full">
-              <div class="flex flex-col flex-1 w-full h-full text-gray-400">
-                <img
-                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                  class="flex-1 object-cover w-full h-full rounded-xl"
-                />
-              </div>
-              <div class="text-base font-medium text-center text-Gray-50">
-                آقای آزمون
-              </div>
-            </div>
+          <div class="sliderItem">
+            <img
+              src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403625-photo144177861012515465.jpg?temp_url_expires=4733510400&temp_url_sig=be1fdd764f612101fc3390b95605fd349b3651c5"
+            />
           </div>
-          <!-- card components -->
-          <div
-            class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-center"
-          >
-            <div class="flex flex-col w-full h-full">
-              <div class="flex flex-col flex-1 w-full h-full text-gray-400">
-                <img
-                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                  class="flex-1 object-cover w-full h-full rounded-xl"
-                />
-              </div>
-              <div class="text-base font-medium text-center text-Gray-50">
-                آقای آزمون
-              </div>
-            </div>
+          <div class="sliderItem">
+            <img
+              src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689658116-photo144150372971893303%20%284%29.jpg?temp_url_expires=4733510400&temp_url_sig=74c52b7d4e61fc34d7d042fc02d98fa6f58de6c7"
+            />
           </div>
-          <!--  -->
-          <div
-            class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-center"
-          >
-            <div class="flex flex-col w-full h-full">
-              <div class="flex flex-col flex-1 w-full h-full text-gray-400">
-                <img
-                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                  class="flex-1 object-cover w-full h-full rounded-xl"
-                />
-              </div>
-              <div class="text-base font-medium text-center text-Gray-50">
-                آقای آزمون
-              </div>
-            </div>
-          </div>
-          <!--  -->
-          <div
-            class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-center"
-          >
-            <div class="flex flex-col w-full h-full">
-              <div class="flex flex-col flex-1 w-full h-full text-gray-400">
-                <img
-                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                  class="flex-1 object-cover w-full h-full rounded-xl"
-                />
-              </div>
-              <div class="text-base font-medium text-center text-Gray-50">
-                آقای آزمون
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-center"
-          >
-            <div class="flex flex-col w-full h-full">
-              <div class="flex flex-col flex-1 w-full h-full text-gray-400">
-                <img
-                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                  class="flex-1 object-cover w-full h-full rounded-xl"
-                />
-              </div>
-              <div class="text-base font-medium text-center text-Gray-50">
-                آقای آزمون
-              </div>
-            </div>
+          <div class="sliderItem">
+            <img
+              src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403473-photo144177861012525421.jpg?temp_url_expires=4733510400&temp_url_sig=3b6fefb2171003cb99aa5c7512ad3f4f12d06167"
+            />
           </div>
         </div>
-      </section>
-    </main>
+        <!-- card holder -->
+        <section
+          id="best"
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">برترین ها</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container"
+          >
+            <!-- card Component -->
+            <template id="card-template">
+              <div
+                class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-start"
+              >
+                <div class="flex flex-col w-full h-full">
+                  <div class="flex flex-col flex-1 w-full h-full text-gray-400">
+                    <img
+                      id="card-image"
+                      src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
+                      class="flex-1 object-cover w-full h-full rounded-xl"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div
+                    id="card-text"
+                    class="text-base font-medium text-right text-gray-950 line-clamp-2"
+                  ></div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </section>
+        <!-- Banner 1 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689761697-%D9%86%DB%8C%D8%A7%D8%A8%D8%AA-%D8%B3%D9%82%D8%A7.png?temp_url_expires=4733510400&temp_url_sig=b44030d70c63ae5a8064b0650c9f8bbd87117802"
+        />
+        <!-- category holder-->
+        <section
+          id="categories"
+          class="grid w-full grid-cols-4 grid-rows-2 gap-2 mx-auto place-items-center rtl"
+        ></section>
+        <!-- category Component -->
+        <template id="category-template">
+          <div
+            class="flex flex-col w-full h-full mx-2 rounded-md cursor-pointer snap-start"
+          >
+            <div class="flex flex-col w-full h-full">
+              <div class="flex flex-col flex-1 w-full h-full text-gray-400">
+                <img
+                  id="card-image"
+                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
+                  class="flex-1 object-cover w-full h-full rounded-xl"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                id="card-text"
+                class="text-base font-medium text-center text-Gray-50 line-clamp-2"
+              >
+                test
+              </div>
+            </div>
+          </div>
+        </template>
+
+        <!-- art apps card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">هنر و خلاقیت</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container2"
+          ></div>
+        </section>
+        <!-- Banner 2 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1686478713-photo144172363357975870.jpg?temp_url_expires=4733510400&temp_url_sig=147007705008e7a99d49303d3c9c7362237c7aad"
+        />
+        <!-- love card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">عاشقانه</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container3"
+          ></div>
+        </section>
+        <!-- Banner 3 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1684299789-photo144161368167086283.jpg?temp_url_expires=4733510400&temp_url_sig=769349f9e5bda289dc28f8f91e9be3987d55ab5d"
+        />
+        <!-- beauty card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">زیبایی</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container4"
+          ></div>
+        </section>
+        <!-- Banner 4 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1688284979-photo144177861014758904.jpg?temp_url_expires=4733510400&temp_url_sig=dbc6fac16dd829febf073fa2b24004052e863aaf"
+        />
+        <!-- love card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">مدیریت فردی</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container5"
+          ></div>
+        </section>
+        <!-- Banner 4 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1683711394-photo144150373036459340.jpg?temp_url_expires=4733510400&temp_url_sig=e3d735f5f55d820950b334bda0bcb1797bcee749"
+        />
+      </main>
+    </div>
+    <!-- Footer -->
     <footer
-      class="flex flex-row-reverse items-center w-full px-3 py-5 mt-5 bg-gray-200 max-md:flex-col"
+      class="flex flex-row-reverse items-center w-full px-3 py-5 bg-warm-gray max-md:flex-col"
     >
       <div
         class="flex items-center justify-center w-2/4 h-full gap-2 max-md:w-full"
