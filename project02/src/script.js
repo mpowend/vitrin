@@ -340,4 +340,4 @@ const mouseDownHandler = e => {
   ele.style.cursor = 'grabbing'
 }
 
-document.addEventListener('mousedown', mouseDownHandler)
+ele.addEventListener('mousedown', mouseDownHandler)
