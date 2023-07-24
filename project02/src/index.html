@@ -1,199 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.tw.css" />
+    <script src="script.js" defer></script>
+    <title>Vitrin</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.tw.css" />
-  <script src="script.js" defer></script>
-  <title>Vitrin</title>
-</head>
-
-<body class="iransans">
-  <header class="w-full h-[60px] flex flex-row justify-around fixed p-1 bg-white z-10">
-    <!-- Header search -->
-    <div class="rounded-full border-[1px] my-auto flex flex-row">
-      <button class="w-6 ml-3">
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd"
-            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path>
-          <path fill-rule="evenodd"
-            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path>
-        </svg>
-      </button>
-      <input type="text" class="flex flex-row items-center w-64 p-2 leading-6 rounded-r-full align-start rtl"
-        placeholder="جست و جو در ویترین" />
-    </div>
-    <!-- Nav -->
-    <nav class="flex flex-row items-center h-full gap-4 rtl max-sm:hidden">
-      <div class="flex flex-col h-full pb-2">
-        <img class="flex-grow object-contain object-bottom w-full h-0 rounded-full"
-          src="https://vitrin.splus.ir/static/media/logo.703f80be4dc089978e16.png" />
-        <span class="text-xs">سروش پلاس</span>
+  <body class="iransans">
+    <header
+      class="w-full h-[60px] flex flex-row justify-around fixed p-1 bg-white z-10"
+    >
+      <!-- Header search -->
+      <div class="rounded-full border-[1px] my-auto flex flex-row">
+        <button class="w-6 ml-3">
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class=""
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+            ></path>
+          </svg>
+        </button>
+        <input
+          type="text"
+          class="flex flex-row items-center w-64 p-2 leading-6 rounded-r-full align-start rtl"
+          placeholder="جست و جو در ویترین"
+        />
       </div>
-      <a href="#">صفحه اصلی</a>
-      <a href="#">بلاگ</a>
-      <a href="#">دریافت برنامه</a>
-    </nav>
-  </header>
-  <div class="w-full pt-1 pb-5 bg-light-gray">
-    <main class="flex flex-col max-w-[800px] gap-8 mt-[60px] px-8 mx-auto bg-white rounded-md">
-      <!-- Slider -->
-      <div class="w-full overflow-x-scroll whitespace-nowrap snap-mandatory snap-x no-scrollbar">
-        <div class="sliderItem">
-          <img draggable="false"
-            src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403625-photo144177861012515465.jpg?temp_url_expires=4733510400&temp_url_sig=be1fdd764f612101fc3390b95605fd349b3651c5" />
+      <!-- Nav -->
+      <nav class="flex flex-row items-center h-full gap-4 rtl max-sm:hidden">
+        <div class="flex flex-col h-full pb-2">
+          <img
+            class="flex-grow object-contain object-bottom w-full h-0 rounded-full"
+            src="https://vitrin.splus.ir/static/media/logo.703f80be4dc089978e16.png"
+          />
+          <span class="text-xs">سروش پلاس</span>
         </div>
-        <div class="sliderItem">
-          <img draggable="false"
-            src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689658116-photo144150372971893303%20%284%29.jpg?temp_url_expires=4733510400&temp_url_sig=74c52b7d4e61fc34d7d042fc02d98fa6f58de6c7" />
-        </div>
-        <div class="sliderItem">
-          <img draggable="false"
-            src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403473-photo144177861012525421.jpg?temp_url_expires=4733510400&temp_url_sig=3b6fefb2171003cb99aa5c7512ad3f4f12d06167" />
-        </div>
-      </div>
-      <!-- card holder -->
-      <section id="best" class="flex flex-col items-center justify-center w-full mx-auto rtl">
-        <div class="flex flex-row w-full px-3 mx-auto">
-          <div class="inline-block w-2/4" id="title">برترین ها</div>
-          <div class="inline-block w-2/4 text-left" id="show-all-link">
-            نمایش همه
+        <a href="#">صفحه اصلی</a>
+        <a href="#">بلاگ</a>
+        <a href="#">دریافت برنامه</a>
+      </nav>
+    </header>
+    <div class="w-full pt-1 pb-5 bg-light-gray">
+      <main
+        class="flex flex-col max-w-[800px] gap-8 mt-[60px] px-8 mx-auto bg-white rounded-md"
+      >
+        <!-- Slider -->
+        <div
+          id="sliderContainer"
+          class="w-full overflow-x-scroll whitespace-nowrap snap-mandatory snap-x no-scrollbar"
+        >
+          <div class="sliderItem">
+            <img
+              draggable="false"
+              src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403625-photo144177861012515465.jpg?temp_url_expires=4733510400&temp_url_sig=be1fdd764f612101fc3390b95605fd349b3651c5"
+            />
+          </div>
+          <div class="sliderItem">
+            <img
+              draggable="false"
+              src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689658116-photo144150372971893303%20%284%29.jpg?temp_url_expires=4733510400&temp_url_sig=74c52b7d4e61fc34d7d042fc02d98fa6f58de6c7"
+            />
+          </div>
+          <div class="sliderItem">
+            <img
+              draggable="false"
+              src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689403473-photo144177861012525421.jpg?temp_url_expires=4733510400&temp_url_sig=3b6fefb2171003cb99aa5c7512ad3f4f12d06167"
+            />
           </div>
         </div>
-        <div class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
-          id="list-container">
-          <!-- card Component -->
-          <template id="card-template">
-            <div class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-start">
-              <div class="flex flex-col w-full h-full">
-                <div class="flex flex-col flex-1 w-full h-full text-gray-400">
-                  <img id="card-image"
-                    src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                    class="flex-1 object-cover w-full h-full rounded-xl" loading="lazy" />
+        <!-- card holder -->
+        <section
+          id="best"
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">برترین ها</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
+          </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container"
+          >
+            <!-- card Component -->
+            <template id="card-template">
+              <div
+                class="flex flex-col cursor-pointer rounded-md h-full min-w-[100px] mx-2 snap-start"
+              >
+                <div class="flex flex-col w-full h-full">
+                  <div class="flex flex-col flex-1 w-full h-full text-gray-400">
+                    <img
+                      id="card-image"
+                      src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
+                      class="flex-1 object-cover w-full h-full rounded-xl"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div
+                    id="card-text"
+                    class="text-base font-medium text-right text-gray-950 line-clamp-2"
+                  ></div>
                 </div>
-                <div id="card-text" class="text-base font-medium text-right text-gray-950 line-clamp-2"></div>
+              </div>
+            </template>
+          </div>
+        </section>
+        <!-- Banner 1 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689761697-%D9%86%DB%8C%D8%A7%D8%A8%D8%AA-%D8%B3%D9%82%D8%A7.png?temp_url_expires=4733510400&temp_url_sig=b44030d70c63ae5a8064b0650c9f8bbd87117802"
+        />
+        <!-- category holder-->
+        <section
+          id="categories"
+          class="grid w-full grid-cols-4 grid-rows-2 gap-2 mx-auto place-items-center rtl"
+        ></section>
+        <!-- category Component -->
+        <template id="category-template">
+          <div
+            class="flex flex-col w-full h-full mx-2 cursor-pointer rounded-[40px] snap-start"
+          >
+            <div
+              class="flex flex-col w-full h-full relative group overflow-hidden rounded-[40px]"
+            >
+              <div
+                class="flex flex-col flex-1 w-full h-full text-gray-400 rounded-[40px]"
+              >
+                <img
+                  id="card-image"
+                  src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
+                  class="flex-1 object-cover w-full h-full rounded-xl transition duration-500 group-hover:blur-[2px]"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                id="card-text"
+                class="text-base invisible rounded-[40px] font-medium text-Gray-50 line-clamp-2 absolute w-full h-full flex justify-center items-center bg-blue-600 bg-opacity-50 text-white group-hover:visible transition duration-500 opacity-0 group-hover:opacity-100 ease-linear"
+              >
+                test
               </div>
             </div>
-          </template>
-        </div>
-      </section>
-      <!-- Banner 1 -->
-      <img
-        src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1689761697-%D9%86%DB%8C%D8%A7%D8%A8%D8%AA-%D8%B3%D9%82%D8%A7.png?temp_url_expires=4733510400&temp_url_sig=b44030d70c63ae5a8064b0650c9f8bbd87117802" />
-      <!-- category holder-->
-      <section id="categories" class="grid w-full grid-cols-4 grid-rows-2 gap-2 mx-auto place-items-center rtl">
-      </section>
-      <!-- category Component -->
-      <template id="category-template">
-        <div class="flex flex-col w-full h-full mx-2 cursor-pointer rounded-[40px] snap-start">
-          <div class="flex flex-col w-full h-full relative group overflow-hidden rounded-[40px]">
-            <div class="flex flex-col flex-1 w-full h-full text-gray-400 rounded-[40px]">
-              <img id="card-image"
-                src="https://file-dl.splus.ir/api/v2/files/download/AgECgUMBAwfnhEsmAC0AAgEAAAACATO2peS7ug"
-                class="flex-1 object-cover w-full h-full rounded-xl transition duration-500 group-hover:blur-[2px]"
-                loading="lazy" />
-            </div>
-            <div id="card-text"
-              class="text-base invisible rounded-[40px] font-medium text-Gray-50 line-clamp-2 absolute w-full h-full flex justify-center items-center bg-blue-600 bg-opacity-50 text-white group-hover:visible transition duration-500 opacity-0 group-hover:opacity-100  ease-linear">
-              test
+          </div>
+        </template>
+
+        <!-- art apps card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">هنر و خلاقیت</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
             </div>
           </div>
-        </div>
-      </template>
-
-      <!-- art apps card holder -->
-      <section class="flex flex-col items-center justify-center w-full mx-auto rtl">
-        <div class="flex flex-row w-full px-3 mx-auto">
-          <div class="inline-block w-2/4" id="title">هنر و خلاقیت</div>
-          <div class="inline-block w-2/4 text-left" id="show-all-link">
-            نمایش همه
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container2"
+          ></div>
+        </section>
+        <!-- Banner 2 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1686478713-photo144172363357975870.jpg?temp_url_expires=4733510400&temp_url_sig=147007705008e7a99d49303d3c9c7362237c7aad"
+        />
+        <!-- love card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">عاشقانه</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
           </div>
-        </div>
-        <div class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
-          id="list-container2"></div>
-      </section>
-      <!-- Banner 2 -->
-      <img
-        src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1686478713-photo144172363357975870.jpg?temp_url_expires=4733510400&temp_url_sig=147007705008e7a99d49303d3c9c7362237c7aad" />
-      <!-- love card holder -->
-      <section class="flex flex-col items-center justify-center w-full mx-auto rtl">
-        <div class="flex flex-row w-full px-3 mx-auto">
-          <div class="inline-block w-2/4" id="title">عاشقانه</div>
-          <div class="inline-block w-2/4 text-left" id="show-all-link">
-            نمایش همه
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container3"
+          ></div>
+        </section>
+        <!-- Banner 3 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1684299789-photo144161368167086283.jpg?temp_url_expires=4733510400&temp_url_sig=769349f9e5bda289dc28f8f91e9be3987d55ab5d"
+        />
+        <!-- beauty card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">زیبایی</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
           </div>
-        </div>
-        <div class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
-          id="list-container3"></div>
-      </section>
-      <!-- Banner 3 -->
-      <img
-        src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1684299789-photo144161368167086283.jpg?temp_url_expires=4733510400&temp_url_sig=769349f9e5bda289dc28f8f91e9be3987d55ab5d" />
-      <!-- beauty card holder -->
-      <section class="flex flex-col items-center justify-center w-full mx-auto rtl">
-        <div class="flex flex-row w-full px-3 mx-auto">
-          <div class="inline-block w-2/4" id="title">زیبایی</div>
-          <div class="inline-block w-2/4 text-left" id="show-all-link">
-            نمایش همه
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container4"
+          ></div>
+        </section>
+        <!-- Banner 4 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1688284979-photo144177861014758904.jpg?temp_url_expires=4733510400&temp_url_sig=dbc6fac16dd829febf073fa2b24004052e863aaf"
+        />
+        <!-- personal growth card holder -->
+        <section
+          class="flex flex-col items-center justify-center w-full mx-auto rtl"
+        >
+          <div class="flex flex-row w-full px-3 mx-auto">
+            <div class="inline-block w-2/4" id="title">مدیریت فردی</div>
+            <div class="inline-block w-2/4 text-left" id="show-all-link">
+              نمایش همه
+            </div>
           </div>
-        </div>
-        <div class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
-          id="list-container4"></div>
-      </section>
-      <!-- Banner 4 -->
-      <img
-        src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1688284979-photo144177861014758904.jpg?temp_url_expires=4733510400&temp_url_sig=dbc6fac16dd829febf073fa2b24004052e863aaf" />
-      <!-- personal growth card holder -->
-      <section class="flex flex-col items-center justify-center w-full mx-auto rtl">
-        <div class="flex flex-row w-full px-3 mx-auto">
-          <div class="inline-block w-2/4" id="title">مدیریت فردی</div>
-          <div class="inline-block w-2/4 text-left" id="show-all-link">
-            نمایش همه
-          </div>
-        </div>
-        <div class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
-          id="list-container5"></div>
-      </section>
-      <!-- Banner 4 -->
-      <img
-        src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1683711394-photo144150373036459340.jpg?temp_url_expires=4733510400&temp_url_sig=e3d735f5f55d820950b334bda0bcb1797bcee749" />
-    </main>
-  </div>
-  <!-- Footer -->
-  <footer class="flex flex-row-reverse items-center w-full px-3 py-5 bg-warm-gray max-md:flex-col">
-    <div class="flex items-center justify-center w-2/4 h-full gap-2 max-md:w-full">
-      <div class="flex items-center justify-center w-12">
-        <a>
-          <img src="https://vitrin.splus.ir/static/media/twitterLogo.5e4849e398efbde9ebc5a4fa49356a96.svg" />
-        </a>
-      </div>
-      <div class="flex items-center justify-center w-12">
-        <a>
-          <img src="https://vitrin.splus.ir/static/media/twitterLogo.5e4849e398efbde9ebc5a4fa49356a96.svg" />
-        </a>
-      </div>
-      <div class="flex items-center justify-center w-12">
-        <a>
-          <img src="https://vitrin.splus.ir/static/media/mailLogo.9262abbf1419951d7478406089d0f126.svg" />
-        </a>
-      </div>
-      <div class="flex items-center justify-center w-12">
-        <a>
-          <img src="https://vitrin.splus.ir/static/media/instagramLogo.87a3f5b3e18e07af86e9b4ed53572941.svg" />
-        </a>
-      </div>
-      <div class="flex items-center justify-center w-12">
-        <a>
-          <img src="https://vitrin.splus.ir/static/media/instagramLogo.87a3f5b3e18e07af86e9b4ed53572941.svg" />
-        </a>
-      </div>
+          <div
+            class="flex justify-between w-full gap-2 px-3 py-2 overflow-x-auto snap-x snap-mandatory no-scrollbar"
+            id="list-container5"
+          ></div>
+        </section>
+        <!-- Banner 4 -->
+        <img
+          src="https://cdnb2.splus.ir/v1/AUTH_bb1c47b2d16d4e7392604eb822626e0a/vitrin/1683711394-photo144150373036459340.jpg?temp_url_expires=4733510400&temp_url_sig=e3d735f5f55d820950b334bda0bcb1797bcee749"
+        />
+      </main>
     </div>
-    <div class="flex items-center justify-center w-2/4 h-full text-lg max-md:w-full max-md:text-sm text-slate-500">
-      تمامی حقوق مادی و معنوی این صفحه متعلق به پیام رسان سروش پلاس می‌باشد.
-    </div>
-  </footer>
-</body>
-
+    <!-- Footer -->
+    <footer
+      class="flex flex-row-reverse items-center w-full px-3 py-5 bg-warm-gray max-md:flex-col"
+    >
+      <div
+        class="flex items-center justify-center w-2/4 h-full gap-2 max-md:w-full"
+      >
+        <div class="flex items-center justify-center w-12">
+          <a>
+            <img
+              src="https://vitrin.splus.ir/static/media/twitterLogo.5e4849e398efbde9ebc5a4fa49356a96.svg"
+            />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-12">
+          <a>
+            <img
+              src="https://vitrin.splus.ir/static/media/twitterLogo.5e4849e398efbde9ebc5a4fa49356a96.svg"
+            />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-12">
+          <a>
+            <img
+              src="https://vitrin.splus.ir/static/media/mailLogo.9262abbf1419951d7478406089d0f126.svg"
+            />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-12">
+          <a>
+            <img
+              src="https://vitrin.splus.ir/static/media/instagramLogo.87a3f5b3e18e07af86e9b4ed53572941.svg"
+            />
+          </a>
+        </div>
+        <div class="flex items-center justify-center w-12">
+          <a>
+            <img
+              src="https://vitrin.splus.ir/static/media/instagramLogo.87a3f5b3e18e07af86e9b4ed53572941.svg"
+            />
+          </a>
+        </div>
+      </div>
+      <div
+        class="flex items-center justify-center w-2/4 h-full text-lg max-md:w-full max-md:text-sm text-slate-500"
+      >
+        تمامی حقوق مادی و معنوی این صفحه متعلق به پیام رسان سروش پلاس می‌باشد.
+      </div>
+    </footer>
+  </body>
 </html>
