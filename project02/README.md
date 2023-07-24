@@ -1,4 +1,4 @@
-# Landing page
+# Vitrin
 
 > This is a clone of [soroush's vitrin](https://vitrin.soroush.app/) with added features done with tailwind and no frameworks.
 
