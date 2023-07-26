@@ -7,6 +7,9 @@ export default {
         'light-gray': '#e5ebef',
         'warm-gray': '#d9dbdc',
       },
+      fontFamily: {
+        iranSans: ['iranSans', 'san-serif'],
+      },
     },
   },
   plugins: [],
