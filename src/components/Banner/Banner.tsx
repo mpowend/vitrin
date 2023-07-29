@@ -1,14 +1,15 @@
 import React from 'react'
 
-interface Props {
+interface props {
   to: string
   src: string
+  title: string
 }
 
-function Banner({ to, src }: Props) {
+function Banner({ to, src, title }: props) {
   return (
     <a href={to}>
-      <img src={src} alt="" />
+      <img src={src} alt={title} />
     </a>
   )
 }
