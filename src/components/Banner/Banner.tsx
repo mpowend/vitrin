@@ -1,16 +1,43 @@
-import React from 'react'
+import generateRandomKey from '@/keyGenerator/keyGenerator.ts'
+import urlFixer from '@/urlFixer/urlFixer.ts'
+import {
+  LazyLoadImage,
+  ScrollPosition,
+  trackWindowScroll,
+} from 'react-lazy-load-image-component'
+import ImageHolder from '../ImageHolder/ImageHolder.tsx'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+import CardSkeleton from '../skeletons/CardSkeleton.tsx'
 
+interface data {
+  link: string
+  ti: string
+  im: string
+}
 interface props {
-  to: string
-  src: string
+  items: data[]
   title: string
+  sp: ScrollPosition
 }
 
-function Banner({ to, src, title }: props) {
+function Banner({ items, sp }: props) {
   return (
-    <a href={to}>
-      <img src={src} alt={title} />
-    </a>
+    <ImageHolder length={items.length}>
+      {items.map(item => (
+        <a href={item.link} key={generateRandomKey()}>
+          <div className="w-full text-center ">
+            <LazyLoadImage
+              src={urlFixer(item.im)}
+              placeholder={<CardSkeleton></CardSkeleton>}
+              alt={item.ti}
+              className="h-full w-full object-cover"
+              scrollPosition={sp}
+            />
+            <div>{items.length > 1 ? item.ti : null}</div>
+          </div>
+        </a>
+      ))}
+    </ImageHolder>
   )
 }
 
