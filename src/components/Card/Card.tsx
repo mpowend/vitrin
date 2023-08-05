@@ -1,4 +1,4 @@
-import urlFixer from '@/urlFixer/urlFixer.ts'
+import urlFixer from '@/utils/urlFixer/urlFixer'
 import {
   LazyLoadComponent,
   LazyLoadImage,
@@ -24,6 +24,7 @@ function Card({
               id="card-image"
               src={urlFixer(src)}
               className="h-full w-full flex-1 rounded-xl object-cover"
+              draggable="false"
             />
           </div>
           <div
