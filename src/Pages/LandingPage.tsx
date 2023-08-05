@@ -5,7 +5,7 @@ import Header from '@/components/Header/Header.tsx'
 import Sliders from '@/components/Sliders/Sliders.tsx'
 import RenderedList from '@/components/renderLists/RenderedList.tsx'
 import LandingSkeleton from '@/components/skeletons/LandingSkeleton.tsx'
-import generateRandomKey from '@/keyGenerator/keyGenerator.ts'
+import generateRandomKey from '@/utils/keyGenerator/keyGenerator.ts'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -27,7 +27,7 @@ function LandingPage({ id }: { id?: number }) {
       getData(landing_id)
     }
   }, [])
-
+  console.log(data)
   const chooseElement = row => {
     switch (row.ty) {
       case 'SLIDER':

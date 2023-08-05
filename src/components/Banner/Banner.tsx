@@ -1,5 +1,5 @@
-import generateRandomKey from '@/keyGenerator/keyGenerator.ts'
-import urlFixer from '@/urlFixer/urlFixer.ts'
+import generateRandomKey from '@/utils/keyGenerator/keyGenerator.ts'
+import urlFixer from '@/utils/urlFixer/urlFixer.ts'
 import {
   LazyLoadImage,
   ScrollPosition,
