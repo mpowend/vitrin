@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Holder({
   title,
   children,
 }: {
   title: string
-  children: React.ReactNode
+  children: React.ReactNode[]
 }) {
   return (
     <section className="rtl mx-auto flex w-full flex-col items-center justify-center">
@@ -14,12 +15,11 @@ function Holder({
           {title}
         </div>
         <div className="inline-block w-2/4 text-left" id="show-all-link">
-          نمایش همه
+          <Link to="/Category">نمایش همه</Link>
         </div>
       </div>
-      <div className="no-scrollbar flex w-full snap-x snap-mandatory justify-between gap-2 overflow-x-auto px-3 py-2">
-        {children}
-      </div>
+
+      {children}
     </section>
   )
 }

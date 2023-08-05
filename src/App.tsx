@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import LandingPage from './Pages/LandingPage.tsx'
 import PageLoader from './components/PageLoader/PageLoader.tsx'
 import CustomeRoutes from './components/CustomRoutes/CustomeRoutes.tsx'
+import CategoryPage from './Pages/CategoryPage.tsx'
 
 function App() {
   const [isLoading, setIsLoading] = useState(false)
@@ -13,10 +14,9 @@ function App() {
     <PageLoader />
   ) : (
     <Routes>
-      <Route path="/" element={<CustomeRoutes />}>
-        <Route path="" index element={<LandingPage id={475} />}></Route>
-        <Route path=":landing_id" element={<LandingPage />}></Route>
-      </Route>
+      <Route path="/" index element={<LandingPage id={475} />} />
+      <Route path="/Category" element={<CategoryPage />} />
+      <Route path="/:landing_id" element={<LandingPage />}></Route>
     </Routes>
   )
 }
