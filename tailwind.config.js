@@ -1,11 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/*.html'],
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
         'light-gray': '#e5ebef',
         'warm-gray': '#d9dbdc',
+      },
+      fontFamily: {
+        iranSans: ['iranSans', 'san-serif'],
       },
     },
   },
