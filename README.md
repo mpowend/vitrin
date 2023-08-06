@@ -2,6 +2,16 @@
 
 > This is a clone of [soroush's vitrin](https://vitrin.soroush.app/) with added features done with tailwind and no frameworks.
 
+## Running with docker
+
+if you want to run the project with docker, you can simply go to ./docker/docker-development and run the following command:
+
+```sh
+$ docker-compose up --build
+```
+
+after that you can access the page on http://localhost:5173
+
 ## Prerequisites
 
 This project requires NodeJS (version 8 or later), NPM and PNPM.
